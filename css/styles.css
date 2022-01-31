@@ -1,0 +1,307 @@
+default css*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+i.fas{
+    padding-right: 5px;
+}
+i.fas.fa-phone-alt {
+    transform: rotate(90deg);
+}
+.container-fluid{
+	padding: 0;
+}
+
+
+
+/* top bar starts here */
+
+.topContainer{
+    background: url("../img/banner.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+    background-size: cover;
+
+}
+.topBar{
+	height: 36px;
+	border-bottom: 1px solid rgb(255 255 255 / 20%);
+}
+.topNavBarContainer {
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.topNavLinks ul {
+    display: block;
+}
+.topNavLinks ul li {
+    display: block;
+    float: left;
+    padding: 8px 15px;
+    border-right: 1px solid rgb(255 255 255 / 20%);
+}
+.topNavLinks ul li:last-child {
+  border :	none;
+}
+.topNavIcons ul li {
+    display: block;
+    float: left;
+    padding: 8px 10px;
+}
+.topNavLinks {
+    float: left;
+}
+.topNavIcons {
+    float: right;
+}
+
+
+
+
+/*navbar starts here*/
+
+header {
+    margin-top: 20px;
+}
+a.navbar-brand {
+    font-family: 'Dongle', sans-serif;
+    font-size: 70px;
+    line-height: 0.5;
+    margin-left: 35px;
+    color: white;
+}
+header li.nav-item {
+   border: 2px solid transparent;
+   padding: 0;
+   padding: 0 10px;
+}
+li.nav-item.active{
+  border: 2px solid rgb(255 255 255 / 50%);  
+  padding-left: 10px;
+  border-radius: 5px;
+  padding-right: 10px;
+}
+header li.nav-item:hover  {
+   border: 2px solid rgb(255 255 255 / 50%);
+   padding: 0;
+   border-radius: 5px;
+   padding: 0 10px;
+}
+.navbar-light .navbar-toggler {
+    border-color: rgb(255 255 255 / 20%);
+}
+
+
+
+
+/* nav tab */
+
+.bookingContainer{
+    margin-top: 140px;
+}
+.nav-tabs {
+    border-bottom: 5px solid #b44645;
+}
+#myTab li.nav-item  button{
+    color: white;
+    background: #4a495987;
+    margin: 0px 2px;
+}
+#myTab li.nav-item  button.active{
+    color: white ;
+    background: #b44645 !important;
+    border-bottom: 3px solid #b44645;
+    border-top:  none;
+    border-left: none;
+    border-right: none;
+}
+.bookingForm{
+    background: rgb(255 255 255 / 90%);
+    padding: 20px;
+}
+a.nav-link {
+    color: white !important;
+    font-size: 15px;
+}
+.bookingForm h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.bookingForm form{
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+}
+.asLink{
+    color: #b44645;
+    float: right;
+}
+.gallInfoText{
+    color: #b44645;
+    font-weight: bold;
+}
+
+
+
+/* services starts here */
+
+.services{
+    background: #f9f9f9;
+    height: 250px;
+    padding: 80px 0 70px 0;
+}
+.services .card{
+    background: transparent;
+    border: none;
+}
+.services .card .card-body p {
+    margin-bottom: 5px;
+}
+.services .card .card-body h5 {
+    font-weight: bold;
+}
+.services i{
+    color: #b44645;
+    font-size: 40px;
+}
+
+
+
+
+/* gallary starts here */
+
+.gallary{
+    padding: 70px 0 0 0;
+}
+.galleryImgCon{
+    position: relative;
+}
+.galleryImgCon img{
+    height: 250px;
+}
+.galleryImgCon span{
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background: #52525242;
+}
+
+
+/* destination starts here */
+
+.map{
+    height: 100%;
+}
+.destinations{
+    padding-left: 35px;
+}
+.destinations h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.destinations .posts .post{
+   cursor: pointer;
+}
+.postContent{
+    padding-left: 20px;
+}
+.postContent h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+.postContent span.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b44645;
+}
+
+
+/*footer starts here*/ 
+footer{
+    padding: 25px;
+}
+.footerText p{
+    margin: 0;
+    font-size: 20px;
+    color: hsl(0deg 0% 79%);
+}
+
+
+
+
+/*media queries for responsiveness*/
+ /* for divices smaller than 1200px */
+@media (max-width:1200px){
+
+.topContainer{
+    height: 810px;
+}
+a.nav-link {
+    font-size: 12px;
+}
+.services{
+    height: 400px !important;
+}
+.galleryImgCon img{
+    height:auto;
+}
+
+
+}
+
+
+ /* for divices smaller than 992px */
+@media (max-width:  992px){
+
+.searchFlightsBtn{
+    font-size: 14px;
+}
+.topBar{
+    border: none;
+}
+.topNavBarContainer{
+    display: none;
+}
+li.nav-item.active{
+    border: 2px solid transparent;
+}
+
+}
+
+
+ /* for divices smaller than 768px */
+@media (max-width:768px){
+
+.topContainer{
+    height: 1125px;
+}
+.services{
+    height: 740px !important;
+}
+.map{
+    height: 500px;
+}
+
+}
+
+
+/* that's all what i did (: 
